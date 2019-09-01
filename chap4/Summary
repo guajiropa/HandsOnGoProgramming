@@ -1,0 +1,5 @@
+In this chapter,  we have learned how to find the current date and time, how to add to and subtract 
+from dates, how to find the difference between two dates, and how to parse dates and times from 
+strings. In the next chapter, you will learn how to work with maps and arrays in the Go language. 
+You will see practical examples for manipulating and iterating arrays, merging arrays and maps, and 
+testing whether a key is present in a map.
