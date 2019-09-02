@@ -14,7 +14,7 @@ import (
 
 func main() {
 
-	num := "f@!#"
+	num := "104"
 	valueInt, err := strconv.ParseInt(num, 10, 32)
 
 	if err != nil {
