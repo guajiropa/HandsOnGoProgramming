@@ -21,7 +21,7 @@ func main() {
 	// First, here is the slice with repetative values in it.
 	intSlice := []int{1, 5, 5, 5, 5, 7, 8, 6, 6, 6}
 
-	// Now let's us our function 'unique()' to get our unique values from intSlice.
+	// Now let's use our function 'unique()' to get our unique values from intSlice.
 	uniqueIntSlice := unique(intSlice)
 
 	// Now display
