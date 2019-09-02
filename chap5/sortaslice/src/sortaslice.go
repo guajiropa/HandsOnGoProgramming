@@ -29,6 +29,8 @@ func main() {
 			fmt.Printf("And our slice looks like this: %v\n", strSlice)
 		}
 	}
+
+	// Setup a sorted list using the sort library.
 	sortedList := sort.StringSlice(strSlice)
 	sortedList.Sort()
 
