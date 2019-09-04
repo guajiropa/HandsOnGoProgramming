@@ -16,11 +16,14 @@ import (
 )
 
 type NameAge struct {
+	// Struct to hold the Name & Age
 	Name string
 	Age  int
 }
 
 func main() {
+
+	// Slice to hold the data from the struct
 	var nameAgeSlice []NameAge
 
 	nameAges := map[string]int{
