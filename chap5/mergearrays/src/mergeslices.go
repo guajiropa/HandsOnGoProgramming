@@ -23,11 +23,4 @@ func main() {
 	results := append(items1, items2...)
 
 	fmt.Println(results)
-
-	var arrItems [4]int
-
-	copy(arrItems[:], results[:4])
-
-	fmt.Println(arrItems[:])
-
 }
