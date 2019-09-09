@@ -19,7 +19,9 @@ func main() {
 		"Tarik":   33,
 		"Jon":     22,
 	}
-	fmt.Println(map1)
+	fmt.Println("======================================================")
+	fmt.Printf("Before the merge, 'map1' contains : \n%v\n", map1)
+	fmt.Println("======================================================")
 
 	map2 := map[string]int{
 		"Lord":  11,
@@ -31,5 +33,7 @@ func main() {
 	for key, value := range map2 {
 		map1[key] = value
 	}
-	fmt.Println(map1)
+
+	fmt.Printf("After the merge, 'map1' contains : \n%v\n", map1)
+	fmt.Println("======================================================")
 }
