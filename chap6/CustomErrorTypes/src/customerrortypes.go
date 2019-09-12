@@ -25,22 +25,22 @@ package main
 
 import "fmt"
 
-
-type MyError struct{
-	ShortMessage string
+type MyError struct {
+	ShortMessage    string
 	DetailedMessage string
-	}
+}
 
- func (e *MyError) Error() string {
-	 return e.ShortMessage + "\n" + e.DetailedMessage
- }
+func (e *MyError) Error() string {
+	return e.ShortMessage + "\n" + e.DetailedMessage
+}
 
- func main(){
-	 err := doSomething()
-	 fmt.Println(err)
- }
+func main() {
+	err := doSomething()
+	fmt.Println(err)
+}
 
- func doSomething() error{
-	 //Doing something here . . .
-	 
- }
+func doSomething() error {
+	//Doing something here . . .
+	return &MyError{ShortMessage: "Oh oh, something went wrong!",
+		DetailedMessage: "These command paramater are not allowed."}
+}
